@@ -1,0 +1,48 @@
+$nav-height: 80px;
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  height: calc(100vh - #{$nav-height});
+  background-color: aqua;
+}
+
+.category-menu {
+  width: 50%;
+  overflow: scroll;
+  .category {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+}
+
+.product-canvas {
+  position: relative;
+  width: 50%;
+}
+
+.shopping-cart {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: lightgray;
+}
+
+.navigation-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: $nav-height;
+  background-color: lightblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
